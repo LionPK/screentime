@@ -14,7 +14,7 @@
 						<th>ประเภทของเกร็ดความรู้</th>
 						<th>ชื่อเกร็ดความรู้</th>
 						<th>ข้อมูลเกร็ดความรู้</th>
-						<th>Actions</th>
+						<th>ฟังก์ชั่น</th>
                     </tr>
                     <?php foreach($knowledge as $k){ ?>
                     <tr>
