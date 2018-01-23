@@ -18,7 +18,7 @@
                     </tr>
                     <?php foreach($knowledge as $k){ ?>
                     <tr>
-						<td><?php echo $k['Know_Id']; ?></td>
+						<td><?php echo $k['ประเภทขอเกร็ดความรู้']; ?></td>
 						<td><?php echo $k['type']; ?></td>
 						<td><?php echo $k['name']; ?></td>
 						<td><?php echo $k['text']; ?></td>
