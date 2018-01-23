@@ -28,7 +28,8 @@
 					<div class="col-md-6">
 						<label for="fileupload" class="control-label">ไฟล์รูปภาพ</label>
 						<div class="form-group">
-							<input type="text" name="fileupload" value="<?php echo $this->input->post('fileupload'); ?>" class="form-control" id="fileupload" />
+							<input type="file" name="fileupload" value="<?php echo $this->input->post('fileupload'); ?>" class="form-control" id="fileupload" />
+							
 						</div>
 					</div>
 				</div>
