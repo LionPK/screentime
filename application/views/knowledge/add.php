@@ -10,7 +10,7 @@
 					<div class="col-md-6">
 						<label for="type" class="control-label">ประเภทของเกร็ดความรู้</label>
 						<div class="form-group">
-							<input type="text" name="type" value="<?php echo $this->input->post('type'); ?>" class="form-control" id="type" />
+							<input type="text" name="type" value="<?php echo $this->input->post('type'); ?>" class="form-control" id="type" /> 
 						</div>
 					</div>
 					<div class="col-md-6">
@@ -23,6 +23,12 @@
 						<label for="text" class="control-label">ข้อมูลเกร็ดความรู้</label>
 						<div class="form-group">
 							<textarea name="text" class="form-control" id="text"><?php echo $this->input->post('text'); ?></textarea>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<label for="fileupload" class="control-label">ไฟล์รูปภาพ</label>
+						<div class="form-group">
+							<input type="text" name="fileupload" value="<?php echo $this->input->post('fileupload'); ?>" class="form-control" id="fileupload" />
 						</div>
 					</div>
 				</div>

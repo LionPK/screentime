@@ -33,6 +33,7 @@ class Knowledge extends CI_Controller{
 				'type' => $this->input->post('type'),
 				'name' => $this->input->post('name'),
 				'text' => $this->input->post('text'),
+                'fileupload' => $this->input->post('fileupload'),
             );
             
             $knowledge_id = $this->Knowledge_model->add_knowledge($params);
@@ -61,6 +62,7 @@ class Knowledge extends CI_Controller{
 					'type' => $this->input->post('type'),
 					'name' => $this->input->post('name'),
 					'text' => $this->input->post('text'),
+                    'fileupload' => $this->input->post('fileupload'),
                 );
 
                 $this->Knowledge_model->update_knowledge($Know_Id,$params);            
