@@ -137,14 +137,14 @@
                         </li>
 						<li>
                             <a href="#">
-                                <i class="fa fa-desktop"></i> <span>Knowledge</span>
+                                <i class="fa fa-desktop"></i> <span>เกร็ดความรู้</span>
                             </a>
                             <ul class="treeview-menu">
 								<li class="active">
-                                    <a href="<?php echo site_url('knowledge/add');?>"><i class="fa fa-plus"></i> Add</a>
+                                    <a href="<?php echo site_url('knowledge/add');?>"><i class="fa fa-plus"></i> เพิ่ม</a>
                                 </li>
 								<li>
-                                    <a href="<?php echo site_url('knowledge/index');?>"><i class="fa fa-list-ul"></i> Listing</a>
+                                    <a href="<?php echo site_url('knowledge/index');?>"><i class="fa fa-list-ul"></i> รายการ</a>
                                 </li>
 							</ul>
                         </li>
