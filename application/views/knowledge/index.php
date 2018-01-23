@@ -10,10 +10,10 @@
             <div class="box-body">
                 <table class="table table-striped">
                     <tr>
-						<th>Know Id</th>
-						<th>Type</th>
-						<th>Name</th>
-						<th>Text</th>
+						<th>ลำดับ</th>
+						<th>ประเภทของเกร็ดความรู้</th>
+						<th>ชื่อเกร็ดความรู้</th>
+						<th>ข้อมูลเกร็ดความรู้</th>
 						<th>Actions</th>
                     </tr>
                     <?php foreach($knowledge as $k){ ?>
