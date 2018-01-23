@@ -93,12 +93,12 @@
                         <li class="header">MAIN NAVIGATION</li>
                         <li>
                             <a href="<?php echo site_url();?>">
-                                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                                <i class="fa fa-home"></i> <span>Dashboard</span>
                             </a>
                         </li>
 						<li>
                             <a href="#">
-                                <i class="fa fa-desktop"></i> <span>Admin</span>
+                                <i class="fa fa-user"></i> <span>Admin</span>
                             </a>
                             <ul class="treeview-menu">
 								<li class="active">
