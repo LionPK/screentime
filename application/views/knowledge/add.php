@@ -2,7 +2,7 @@
     <div class="col-md-12">
       	<div class="box box-info">
             <div class="box-header with-border">
-              	<h3 class="box-title">Knowledge Add</h3>
+              	<h3 class="box-title">เพิ่มข้อมูลเกร็ดความรู้</h3>
             </div>
             <?php echo form_open('knowledge/add'); ?>
           	<div class="box-body">
