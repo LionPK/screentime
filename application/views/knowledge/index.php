@@ -9,7 +9,6 @@
             </div>
             <div class="box-body">
                 <table class="table table-striped">
-                    <br>
                     <tr>
 						<th>ลำดับ</th>
 						<th>ประเภทของเกร็ดความรู้</th>
