@@ -3,8 +3,13 @@
         <div class="box">
             <div class="box-header">
                 <h3 class="box-title">เกร็ดความรู้การดูแลสุขภาพตา</h3>
-            	<div class="box-tools">
-                    <a href="<?php echo site_url('knowledge/add'); ?>" class="btn btn-success btn-sm">Add</a> 
+            	<div class="subhead">
+                    <br><a href="<?php echo site_url('knowledge/add'); ?>" class="btn btn-success btn-sm">เพิ่ม</a> 
+                     <a role="<?php echo site_url('knowledge/add'); ?>" class="btn btn-success btn-sm" 
+                     <i class="glyphicon glyphicon-refresh"></i>
+                    โหลดหน้าจอใหม่
+</a>
+                    
                 </div>
             </div>
             <div class="box-body">
