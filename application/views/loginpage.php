@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V1</title>
+	<title>แอปพลิเคชันสำหรับประเมินผลกระทบทางด้านสุขภาพตา ด้วยเทคนิคการตรวจจับเวลาหน้าจอ
+</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -25,26 +26,26 @@
 	
 	<div class="limiter">
 		<div class="container-login100">
-			<div class="wrap-login100">
+			<div class="wrap-login100" >
 				<div class="login100-pic js-tilt" data-tilt>
-					<img src="resources/img/img-01.png" alt="IMG">
+					<img src="resources/img/eyeSuggestionLogo.png" alt="IMG">
 				</div>
 
 				<form class="login100-form validate-form">
 					<span class="login100-form-title">
-						Member Login
+						ลงชื่อเข้าใช้งานระบบ
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
+					<div class="wrap-input100 validate-input" data-validate = "กรุณาตรวจสอบอีเมล์ให้ถูกต้อง: ex@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="อีเมล์">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+					<div class="wrap-input100 validate-input" data-validate = "กรุณาตรวจสอบรหัสผ่านให้ถูกต้อง">
+						<input class="input100" type="password" name="pass" placeholder="รหัสผ่าน">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -53,25 +54,25 @@
 					
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
-							Login
+							เข้าสู่ระบบ
 						</button>
 					</div>
 
-					<div class="text-center p-t-12">
+					<!-- <div class="text-center p-t-12">
 						<span class="txt1">
 							Forgot
 						</span>
 						<a class="txt2" href="#">
 							Username / Password?
 						</a>
-					</div>
+					</div> -->
 
-					<div class="text-center p-t-136">
+					<!-- <div class="text-center p-t-136">
 						<a class="txt2" href="#">
 							Create your Account
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
-					</div>
+					</div> -->
 				</form>
 			</div>
 		</div>
