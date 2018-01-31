@@ -1,0 +1,35 @@
+<?php 
+   class Customer_Model extends CI_Model {
+	
+      function __construct() { 
+         parent::__construct(); 
+      } 
+	  
+	  public function selectOne($id){
+		  
+		 $query = $this->db->get_where("knowledge",array("id"=>$id));
+		 
+         $data = $query->result(); 
+		 
+		 return $data;
+	  }
+   
+      public function insert($data) { 
+         if ($this->db->insert("knowledge", $data)) { 
+            return true; 
+         } 
+      } 
+   
+      public function delete($id) { 
+         if ($this->db->delete("knowledge", "id = ".$id)) { 
+            return true; 
+         } 
+      } 
+   
+      public function update($data,$id) { 
+         $this->db->set($data); 
+         $this->db->where("id", $id); 
+         $this->db->update("knowledge", $data); 
+      } 
+   } 
+?> 

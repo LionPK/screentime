@@ -12,10 +12,10 @@
 						<div class="form-group">
 							<select name="type" id="type" value="<?php echo ($this->input->post('type') ? $this->input->post('type') : $knowledge['type']); ?>" class="form-control" />
 								<option>- เลือก -</option> 
-							<option value="ข้อมูลสุขภาพโรคตา" <?if($_POST["ddlSelect"]=="ข้อมูลสุขภาพโรคตา"){echo"selected";}?>> ข้อมูลสุขภาพโรคตา</option>
-							<option value="ข้อมูลอาหาร" <?if($_POST["ddlSelect"]=="ข้อมูลอาหาร"){echo"selected";}?>> ข้อมูลอาหาร</option>
-							<option value="ข้อมูลแพทย์" <?if($_POST["ddlSelect"]=="ข้อมูลแพทย์"){echo"selected";}?>> ข้อมูลแพทย์</option>
-							<option value="ข้อมูลด้านอื่นๆ" <?if($_POST["ddlSelect"]=="ข้อมูลด้านอื่นๆ"){echo"selected";}?>> ข้อมูลด้านอื่นๆ</option>
+							<option value="ข้อมูลสุขภาพโรคตา" <?if($_POST["ddlSelect"]=="ข้อมูลสุขภาพโรคตา"){echo"selected";}?>ข้อมูลสุขภาพโรคตา</option>
+							<option value="ข้อมูลอาหาร" <?if($_POST["ddlSelect"]=="ข้อมูลอาหาร"){echo"selected";}?>ข้อมูลอาหาร</option>
+							<option value="ข้อมูลแพทย์" <?if($_POST["ddlSelect"]=="ข้อมูลแพทย์"){echo"selected";}?>ข้อมูลแพทย์</option>
+							<option value="ข้อมูลด้านอื่นๆ" <?if($_POST["ddlSelect"]=="ข้อมูลด้านอื่นๆ"){echo"selected";}?>ข้อมูลด้านอื่นๆ</option>
 						</select>
 						</div>
 					</div>

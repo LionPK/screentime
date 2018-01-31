@@ -133,3 +133,8 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 $autoload['model'] = array();
+<<<<<<< HEAD
+
+// $autoload['helper'] = array('html');
+=======
+>>>>>>> eb62a8836c8c18f049916065d67f59399fe9ccac

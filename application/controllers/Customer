@@ -1,0 +1,139 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Customer extends CI_Controller {
+	
+	function __construct() { 
+	
+         parent::__construct(); 
+		 
+		 $this->load->model('Customer_Model');
+		 
+         $this->load->helper('url'); 
+		 
+		 $this->load->helper('form');
+		 
+		 $this->load->helper('html');
+		 
+         $this->load->database(); 
+    } 
+
+	public function index()
+	{
+		$query = $this->db->get("knowledge"); 
+		 
+        $data['knowledge'] = $query->knowledge(); 
+		
+		$this->load->view('header');
+		
+		$this->load->view('knowledge/index',$data);
+		
+		$this->load->view('footer');
+	}
+	
+	public function add_customer_form(){
+		
+		$this->load->view('header');
+		
+		$this->load->view('knowledge/add');
+		
+		$this->load->view('footer');
+	}
+	
+	public function save_customer(){
+		
+         $config['upload_path']   = './upload/'; 
+         $config['allowed_types'] = 'gif|jpg|png'; 
+         $config['max_size']      = 0; 
+         $config['max_width']     = 0; 
+         $config['max_height']    = 0;  
+         $config['encrypt_name']  = true;
+
+         $this->load->library('upload', $config);
+			
+         if ( ! $this->upload->do_upload('userfile')) {
+
+            $error = array('error' => $this->upload->display_errors()); 
+
+			$this->load->view('header');
+
+            $this->load->view('knowledge/add', $error); 
+
+            $this->load->view('footer');
+
+         }else{
+
+			$data = array( 
+	            'type' => $this->input->post('type'), 
+	            'name' => $this->input->post('name'),
+	            'text' => $this->input->post('text'),
+	            'fileupload' => $this->upload->data('file_name'), 
+	        ); 
+				
+	        $this->Customer_Model->insert($data); 
+			
+			redirect('knowledge/index');
+        }
+	}
+	 
+	public function edit_customer_form(){
+		
+		 $id = $this->uri->segment('3'); 
+		 
+		 $data['result'] = $this->Customer_Model->selectOne($id);
+		 
+		 $this->load->view('header');
+		 
+         $this->load->view('knowledge/edit',$data);
+		 
+		 $this->load->view('footer');
+		
+	}
+	
+	public function save_edit_customer(){
+		
+		 $config['upload_path']   = './uploads/'; 
+         $config['allowed_types'] = 'gif|jpg|png'; 
+         $config['max_size']      = 0; 
+         $config['max_width']     = 0; 
+         $config['max_height']    = 0;  
+         $config['encrypt_name']  = true;
+
+         $this->load->library('upload', $config);
+			
+         if ( ! $this->upload->do_upload('userfile')) {
+
+
+           	$fileupload = $this->input->post('old_image');
+
+         }else{
+
+			$fileupload = $this->upload->data('file_name');
+         }
+		
+		 $data = array( 
+            'type' => $this->input->post('type'), 
+            'name' => $this->input->post('name'),
+            'text' => $this->input->post('text'),
+            'fileupload' => $fileupload,
+         ); 
+		 
+		 $id = $this->input->post('id');
+			
+         $this->Customer_Model->update($data,$id); 
+		
+		 redirect('knowledge/index');
+
+	}
+	
+	public function delete_customer(){
+		
+		 $id = $this->uri->segment('3'); 
+		 
+		 $this->Customer_Model->delete($id); 
+		 
+		 redirect('knowledge/index');
+	}
+	
+	
+}
