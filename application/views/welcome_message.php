@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>แอปพลิเคชันสำหรับประเมินผลกระทบทางด้านสุขภาพตา ด้วยเทคนิคการตรวจจับเวลาหน้าจอ
-</title>
+	<title>แอปพลิเคชันสำหรับประเมินผลกระทบทางด้านสุขภาพตา ด้วยเทคนิคการตรวจจับเวลาหน้าจอ</title>
+	<?php echo $menu_top;?>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -30,14 +30,14 @@
 				<div class="login100-pic js-tilt" data-tilt>
 					<img src="resources/img/eyeSuggestionLogo.png" alt="IMG">
 				</div>
-
+				
 				<form class="login100-form validate-form">
 					<span class="login100-form-title">
 						ลงชื่อเข้าใช้งานระบบ
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "กรุณาตรวจสอบอีเมล์ให้ถูกต้อง: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="อีเมล์">
+						<input class="input100" type="text" name="username" placeholder="อีเมล์">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -45,7 +45,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "กรุณาตรวจสอบรหัสผ่านให้ถูกต้อง">
-						<input class="input100" type="password" name="pass" placeholder="รหัสผ่าน">
+						<input class="input100" type="password" name="password" placeholder="รหัสผ่าน">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -100,3 +100,4 @@
 
 </body>
 </html>
+
